@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js loading">
+<html lang="en" class="js loaded">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,29 +8,17 @@
     <meta name="keywords" content="javascript, webgl, shaders, glsl, inspiration, web design" />
     <meta name="author" content="Codrops" />
     <link rel="shortcut icon" href="favicon.ico">
-    <link rel="stylesheet" href="https://use.typekit.net/zvj1jsw.css">
-    <!--script src="//tympanus.net/codrops/adpacks/analytics.js"></script-->
+    <style media="screen">
+      html {
+        background: #0c0c0c;
+        color: #fff;
+      }
+      body{ margin: 0; }
+    </style>
   </head>
 
-  <body data-id="0">
+  <body>
     <main>
-      <div class="frame">
-        <div class="frame__title-wrap">
-          <h1 class="frame__title">Infinite WebGL Scrolling Gallery</h1>
-          <p class="frame__tagline">using <a href="https://github.com/oframe/ogl">OGL</a> with shaders</p>
-        </div>
-
-        <div class="frame__links">
-          <a href="https://tympanus.net/Tutorials/BreathingDots/">Previous Demo</a>
-          <a href="https://tympanus.net/codrops/?p=52634">Article</a>
-          <a href="https://github.com/lhbizarro/infinite-webl-gallery" target="_blank">GitHub</a>
-        </div>
-
-        <div class="frame__demos">
-          <a href="index.html" class="frame__demo frame__demo--current">Demo 1</a>
-          <a href="index2.html" class="frame__demo">Demo 2</a>
-        </div>
-      </div>
 
       <div class="demo-1">
         <div class="demo-1__header">
@@ -88,9 +76,10 @@
             <img class="demo-1__gallery__image" src="images/demo-1/12.jpg">
           </figure>
         </div>
+
+        <canvas id="contact-canvas"></canvas>
       </div>
     </main>
 
-    <!--script src="https://tympanus.net/codrops/adpacks/cda.js"></script-->
   </body>
 </html>

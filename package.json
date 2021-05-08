@@ -1,5 +1,5 @@
 {
-  "name": "infinite-webgl-gallery",
+  "name": "webgl-inf-gallery",
   "version": "1.0.0",
   "scripts": {
     "start": "npm run development",

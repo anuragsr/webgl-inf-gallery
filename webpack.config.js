@@ -19,7 +19,8 @@ module.exports = {
   ],
 
   output: {
-    filename: '[name].[contenthash].js'
+    // filename: '[name].[contenthash].js'
+    filename: 'script-contact-bg.js'
   },
 
   resolve: {
@@ -44,11 +45,6 @@ module.exports = {
       template: path.join(__dirname, 'index.html')
     }),
 
-    new HtmlWebpackPlugin({
-      filename: 'index2.html',
-      template: path.join(__dirname, 'index2.html')
-    }),
-
     new CopyWebpackPlugin([
       {
         from: './images',
@@ -57,7 +53,9 @@ module.exports = {
     ]),
 
     new MiniCssExtractPlugin({
-      filename: '[name].[hash].css',
+      // filename: '[name].[hash].css',
+      // chunkFilename: '[id].css'
+      filename: 'style-contact-bg.css',
       chunkFilename: '[id].css'
     })
   ],
@@ -90,7 +88,8 @@ module.exports = {
           {
             loader: 'sass-loader',
             options: {
-              sourceMap: IS_DEVELOPMENT
+              sourceMap: IS_DEVELOPMENT,
+              sassOptions: { minimize: false, outputStyle: 'expanded' }
             }
           }
         ]

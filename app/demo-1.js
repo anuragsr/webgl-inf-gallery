@@ -1,8 +1,6 @@
 import { Renderer, Camera, Transform, Plane } from 'ogl'
 import NormalizeWheel from 'normalize-wheel'
-
 import { lerp } from 'utils/math'
-
 import Media from './demo-1/Media'
 
 export default class App {
@@ -37,12 +35,11 @@ export default class App {
 
   createRenderer () {
     this.renderer = new Renderer({
-      alpha: true
+      alpha: true,
+      canvas: document.querySelector("#contact-canvas")
     })
 
     this.gl = this.renderer.gl
-
-    document.body.appendChild(this.gl.canvas)
   }
 
   createCamera () {

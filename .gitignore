@@ -1,3 +1,5 @@
 /node_modules
+/extra
+/build
 /.cache
 package-lock.json

@@ -8,11 +8,11 @@ module.exports = merge(config, {
 
   devtool: 'inline-source-map',
 
-  devServer: {
-    writeToDisk: true
-  },
-
-  output: {
-    path: path.join(__dirname, 'InifniteAutoScrollingGallery')
-  }
+  // devServer: {
+  //   writeToDisk: true
+  // },
+  //
+  // output: {
+  //   path: path.join(__dirname, 'build')
+  // }
 })
